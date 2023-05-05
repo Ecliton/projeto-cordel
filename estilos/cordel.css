@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main,body{
+    background-color:grey;
+    min-height:100vh;
+}
+/*HEADER*/
+header{
+    background-color:black;
+    height:200px;
+}
+header>h1{
+    color:white;
+    text-align: center;
+
+    /*text-transform:uppercase;
+    para transformar o  texto em maiusculo*/
+
+    font-variant: small-caps;
+    /*deixa o texto em maiusculo, mas mantem o tamanho das letras iniciais maiores */
+
+    padding-top:50px;
+
+}
+header>p{
+    text-align:center;
+
+    padding-bottom:50px;
+    color:white;
+}
+header>a, footer>a {
+    color:white;
+    text-decoration:none;
+}
+header>a:hover, footer>a:hover{
+    text-decoration: underline;
+}
+/*SECTIONS*/
+section{
+    padding-top:10vh;
+    padding-bottom: 10vh;
+
+    line-height: 2em;
+    /*aumenta o espaçamento das linhas*/
+    padding-left:30px;
+}
+section.normal{
+    background-color:white;
+}
+section.imagem{
+    background-color:green;
+}
+section.imagem>p{
+    color:white;
+    background-color:rgba(0, 0, 0, 0.164);
+    padding-left:10px;
+    width:400px;
+    border-radius:10px;
+}
+/*FOOTER*/
+footer{
+    text-align:center;
+    padding:10px;
+    background-color: black;
+    color:white;
+}
