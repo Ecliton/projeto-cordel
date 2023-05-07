@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Klee+One:wght@400;600&family=Sriracha&display=swap');
+
+@font-face {
+    font-family:'cordel';
+    src: url('../fontes/Cordel-Encarnado-II.ttf') format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
 *{
     margin: 0;
     padding: 0;
 }
+
 main,body{
-    background-color:grey;
+    background-color:rgb(255, 255, 255);
     min-height:100vh;
 }
 /*HEADER*/
 header{
     background-color:black;
-    height:200px;
+    min-height:150px;
+    height:22vw;
 }
 header>h1{
+    font:9vw 'cordel',arial,sans-serif;
     color:white;
     text-align: center;
 
@@ -26,37 +37,50 @@ header>h1{
 }
 header>p{
     text-align:center;
+    font:2.5vw 'cordel', arial, sans-serif;
 
     padding-bottom:50px;
     color:white;
 }
-header>a, footer>a {
-    color:white;
+header a, footer a {
+    color:rgb(255, 255, 255);
     text-decoration:none;
 }
-header>a:hover, footer>a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
+
 /*SECTIONS*/
 section{
-    padding-top:10vh;
-    padding-bottom: 10vh;
+    padding-top:15vh;
+    padding-bottom:15vh;
 
     line-height: 2em;
     /*aumenta o espaçamento das linhas*/
     padding-left:30px;
 }
+section>p{
+    font:3vw 'Sriracha', arial, sans-serif;
+}
 section.normal{
     background-color:white;
 }
 section.imagem{
-    background-color:green;
+    /*background-image: url('../imagens/background001.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;*/
+    background:black url('../imagens/background001.jpg') right center fixed;
+    background-size:cover;
+}
+#img2{
+    background-image: url('../imagens/background002.jpg');
 }
 section.imagem>p{
     color:white;
     background-color:rgba(0, 0, 0, 0.164);
     padding-left:10px;
-    width:400px;
+    width:40vw;
     border-radius:10px;
 }
 /*FOOTER*/
